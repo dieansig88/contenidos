@@ -4,30 +4,65 @@
   <meta charset="utf-8">
   <title>Hidrógeno en Sistemas Energéticos</title>
 
+  <!-- Fuente estilo LaTeX -->
   <style>
+    @import url('https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@5.0.8/index.css');
+
     body {
       max-width: 900px;
-      margin: 40px auto;
-      padding: 0 20px;
-      font-family: system-ui, Arial, sans-serif;
-      line-height: 1.6;
+      margin: 20px auto;
+      padding: 0 16px;
+      font-family: "Latin Modern Roman", "Computer Modern", serif;
+      line-height: 1.3;
+      font-size: 16px;
     }
 
-    /* === Numeración 1.1, 1.2, 2.1, ... === */
+    h1 {
+      margin-bottom: 0.3em;
+      font-size: 1.6em;
+      font-weight: 600;
+    }
+
+    h2 {
+      margin-top: 0.4em;
+      margin-bottom: 0.3em;
+      font-size: 1.25em;
+      font-weight: 600;
+    }
+
+    h3 {
+      margin-top: 0.6em;
+      margin-bottom: 0.2em;
+      font-size: 1.05em;
+      font-weight: 600;
+    }
+
+    /* === Numeración tipo LaTeX: 1.1, 1.2, 2.1, ... === */
     ol.unit {
       counter-reset: item;
       list-style: none;
-      padding-left: 2em;
+      padding-left: 1.6em;
+      margin-top: 0.1em;
+      margin-bottom: 0.3em;
     }
 
     ol.unit > li {
       counter-increment: item;
-      margin-bottom: 0.3em;
+      margin-bottom: 0.15em;
     }
 
     ol.unit > li::before {
       content: counter(unit) "." counter(item) ". ";
       font-weight: 600;
+    }
+
+    a {
+      font-size: 0.9em;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
     }
   </style>
 </head>
@@ -48,7 +83,7 @@
 <h3 style="counter-reset: unit 2">Unidad 2. Producción de hidrógeno</h3>
 <ol class="unit">
   <li>Clasificación de rutas de producción de hidrógeno.</li>
-  <li>Producción de hidrógeno a partir de combustibles fósiles.</li>
+  <li>Producción de hidrógeno a partir de combustibles fósiles (enfoque energético).</li>
   <li>Producción de hidrógeno a partir de biomasa.</li>
   <li>Producción de hidrógeno por electrólisis del agua.</li>
 </ol>
@@ -56,7 +91,7 @@
 <h3 style="counter-reset: unit 3">Unidad 3. Almacenamiento y transporte de hidrógeno</h3>
 <ol class="unit">
   <li>Métodos de almacenamiento de hidrógeno.</li>
-  <li>Transporte y distribución del hidrógeno.</li>
+  <li>Transporte y distribución de hidrógeno.</li>
   <li>Pérdidas energéticas asociadas al almacenamiento y transporte.</li>
   <li>Consideraciones de seguridad y normativas básicas.</li>
 </ol>
