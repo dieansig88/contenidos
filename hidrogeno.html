@@ -3,46 +3,73 @@
 <head>
   <meta charset="utf-8">
   <title>Hidrógeno en Sistemas Energéticos</title>
+
+  <style>
+    body {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      font-family: system-ui, Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    ol.unit {
+      counter-reset: item;
+      list-style: none;
+      padding-left: 1.8em;
+    }
+
+    ol.unit > li {
+      counter-increment: item;
+      margin-bottom: 0.3em;
+    }
+
+    ol.unit > li::before {
+      content: counter(unit) "." counter(item) ". ";
+      font-weight: 600;
+    }
+  </style>
 </head>
+
 <body>
 
 <h1>Hidrógeno en Sistemas Energéticos</h1>
 <h2>Contenidos</h2>
 
-<h3>Unidad 1. Hidrógeno como portador energético</h3>
-<ol>
+<h3 style="counter-reset: unit 1">Unidad 1. Hidrógeno como portador energético</h3>
+<ol class="unit">
   <li>Propiedades energéticas del hidrógeno.</li>
   <li>Hidrógeno en el contexto de la transición energética.</li>
   <li>Comparación del hidrógeno con otros portadores energéticos.</li>
   <li>Aplicaciones actuales y emergentes del hidrógeno.</li>
 </ol>
 
-<h3>Unidad 2. Producción de hidrógeno</h3>
-<ol>
+<h3 style="counter-reset: unit 2">Unidad 2. Producción de hidrógeno</h3>
+<ol class="unit">
   <li>Clasificación de rutas de producción de hidrógeno.</li>
-  <li>Producción de hidrógeno a partir de combustibles fósiles (enfoque energético).</li>
+  <li>Producción de hidrógeno a partir de combustibles fósiles.</li>
   <li>Producción de hidrógeno a partir de biomasa.</li>
   <li>Producción de hidrógeno por electrólisis del agua.</li>
 </ol>
 
-<h3>Unidad 3. Almacenamiento y transporte de hidrógeno</h3>
-<ol>
+<h3 style="counter-reset: unit 3">Unidad 3. Almacenamiento y transporte de hidrógeno</h3>
+<ol class="unit">
   <li>Métodos de almacenamiento de hidrógeno.</li>
   <li>Transporte y distribución del hidrógeno.</li>
   <li>Pérdidas energéticas asociadas al almacenamiento y transporte.</li>
   <li>Consideraciones de seguridad y normativas básicas.</li>
 </ol>
 
-<h3>Unidad 4. Uso del hidrógeno en sistemas energéticos</h3>
-<ol>
+<h3 style="counter-reset: unit 4">Unidad 4. Uso del hidrógeno en sistemas energéticos</h3>
+<ol class="unit">
   <li>Uso del hidrógeno en generación de energía.</li>
-  <li>Pilas de combustible (enfoque funcional y energético).</li>
+  <li>Pilas de combustible.</li>
   <li>Hidrógeno en aplicaciones industriales y de movilidad.</li>
   <li>Integración del hidrógeno con sistemas eléctricos y renovables.</li>
 </ol>
 
-<h3>Unidad 5. Evaluación e integración de sistemas basados en hidrógeno</h3>
-<ol>
+<h3 style="counter-reset: unit 5">Unidad 5. Evaluación e integración de sistemas basados en hidrógeno</h3>
+<ol class="unit">
   <li>Análisis energético de sistemas de hidrógeno.</li>
   <li>Eficiencia y desempeño de cadenas energéticas basadas en hidrógeno.</li>
   <li>Impactos ambientales y sostenibilidad.</li>
