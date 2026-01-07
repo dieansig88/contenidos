@@ -5,13 +5,45 @@
 <title>Geología de Recursos Naturales</title>
 <style>
 @import url('https://cdn.jsdelivr.net/npm/@fontsource/latin-modern-roman@5.0.8/index.css');
-body{max-width:900px;margin:20px auto;padding:0 16px;font-family:"Latin Modern Roman",serif;line-height:1.3;font-size:16px}
+
+body{
+  max-width:900px;
+  margin:20px auto;
+  padding:0 16px;
+  font-family:"Latin Modern Roman",serif;
+  line-height:1.3;
+  font-size:16px
+}
+
 h1{margin-bottom:.3em;font-size:1.6em}
 h2{margin:.4em 0 .3em;font-size:1.25em}
-h3{margin:.6em 0 .2em;font-size:1.05em;font-weight:600}
-ol.unit{counter-reset:item;list-style:none;padding-left:1.6em;margin:.1em 0 .3em}
-ol.unit>li{counter-increment:item;margin-bottom:.15em}
-ol.unit>li::before{content:counter(unit)"."counter(item)". ";font-weight:600}
+
+/* 👉 manejo correcto de contadores */
+body{counter-reset:unit}
+
+h3{
+  margin:.6em 0 .2em;
+  font-size:1.05em;
+  font-weight:600;
+  counter-increment:unit;
+  counter-reset:item;
+}
+
+ol.unit{
+  list-style:none;
+  padding-left:1.6em;
+  margin:.1em 0 .3em
+}
+
+ol.unit>li{
+  counter-increment:item;
+  margin-bottom:.15em
+}
+
+ol.unit>li::before{
+  content:counter(unit) "." counter(item) ". ";
+  font-weight:600
+}
 </style>
 </head>
 <body>
@@ -19,7 +51,7 @@ ol.unit>li::before{content:counter(unit)"."counter(item)". ";font-weight:600}
 <h1>Geología de Recursos Naturales</h1>
 <h2>Contenidos</h2>
 
-<h3 style="counter-reset:unit 1">Unidad 1. Fundamentos de geología para ingeniería</h3>
+<h3>Unidad 1. Fundamentos de geología para ingeniería</h3>
 <ol class="unit">
 <li>La Tierra como sistema: litosfera, hidrosfera, atmósfera y biosfera.</li>
 <li>Estructura interna de la Tierra.</li>
@@ -28,7 +60,7 @@ ol.unit>li::before{content:counter(unit)"."counter(item)". ";font-weight:600}
 <li>Escalas espaciales y temporales en geología.</li>
 </ol>
 
-<h3 style="counter-reset:unit 2">Unidad 2. Geodinámica y procesos geológicos</h3>
+<h3>Unidad 2. Geodinámica y procesos geológicos</h3>
 <ol class="unit">
 <li>Tectónica de placas y dinámica de la litosfera.</li>
 <li>Vulcanismo y sismicidad.</li>
@@ -37,7 +69,7 @@ ol.unit>li::before{content:counter(unit)"."counter(item)". ";font-weight:600}
 <li>Implicaciones de los procesos geológicos en la infraestructura energética.</li>
 </ol>
 
-<h3 style="counter-reset:unit 3">Unidad 3. Recursos geológicos y energéticos</h3>
+<h3>Unidad 3. Recursos geológicos y energéticos</h3>
 <ol class="unit">
 <li>Clasificación de los recursos naturales.</li>
 <li>Recursos minerales metálicos y no metálicos.</li>
@@ -46,7 +78,7 @@ ol.unit>li::before{content:counter(unit)"."counter(item)". ";font-weight:600}
 <li>Materiales geológicos críticos para la transición energética.</li>
 </ol>
 
-<h3 style="counter-reset:unit 4">Unidad 4. Hidrogeología y recursos hídricos</h3>
+<h3>Unidad 4. Hidrogeología y recursos hídricos</h3>
 <ol class="unit">
 <li>Ciclo hidrológico desde la perspectiva geológica.</li>
 <li>Acuíferos: tipos, propiedades y dinámica.</li>
@@ -55,7 +87,7 @@ ol.unit>li::before{content:counter(unit)"."counter(item)". ";font-weight:600}
 <li>Importancia del recurso hídrico en sistemas energéticos.</li>
 </ol>
 
-<h3 style="counter-reset:unit 5">Unidad 5. Geología aplicada a energías renovables y sostenibilidad</h3>
+<h3>Unidad 5. Geología aplicada a energías renovables y sostenibilidad</h3>
 <ol class="unit">
 <li>Geología y emplazamiento de proyectos hidroeléctricos.</li>
 <li>Fundamentos geológicos de la energía geotérmica.</li>
@@ -67,4 +99,3 @@ ol.unit>li::before{content:counter(unit)"."counter(item)". ";font-weight:600}
 <p><a href="index.html">← Volver al índice</a></p>
 </body>
 </html>
-
